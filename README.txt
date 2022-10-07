@@ -7,6 +7,11 @@
 # Date
 - circa 10.06.2022
 
+# Test on file "short.vcf" (provded):
+bash$: ./main.sh -v short.vcf -o Short_output -t
+- Results table should write to "Short_output/results.tsv"
+- Note: The first run of main.sh will install the "Reference_resources" directory, which contains resources for lift over to hg38 and indel normalization
+
 # Description
 - Mini_annotation is an analysis pipeline for varant format call (VCF) file that:
 	1. Retrieves multi-transcript Ensembl effects for each variant
@@ -20,12 +25,7 @@ bash$: bash ./main.sh -v [input_vcf] -o [output_directory] -t (optional)
 
 # Dependencies and requirements
 - Mini_annotation is a bash pipeline designed to be run from the command line.  It requires the user have Java installed, as well as Perl and Python in the appropriate paths.  
-- Note: The first run of main.sh will install the "Reference_resources" directory, which contains resources for lift over to hg38 and indel normalization
 - Important: Due to limits of Enseml VEP API requests, the maximum number of variants that can be processed is 11,000,000 per hour.  If more variants need to be processed, please truncate inputs accordingly
-
-# Test on file "short.vcf" (provded):
-bash$: ./main.sh -v short.vcf -o Short_output -t
-- Results table should write to "Short_output/results.tsv"
 
 # Previous results:
 The results for annotation of test_vcf_data.txt test_vcf_data.annotated.tsv (included)
