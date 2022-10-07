@@ -8,7 +8,7 @@
 - circa 10.06.2022
 
 # Description
-- Chicago is an analysis pipeline for varant format call (VCF) file that:
+- Mini_annotation is an analysis pipeline for varant format call (VCF) file that:
 	1. Retrieves multi-transcript Ensembl effects for each variant
 	2. Retrieves ClinVar clinical interpretation for variant 
 	3. Retrieves a set of PMIDs referencing variant
