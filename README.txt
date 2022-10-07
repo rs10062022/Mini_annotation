@@ -16,7 +16,7 @@ bash$: ./main.sh -v short.vcf -o Short_output -t
 - Note: The first run of main.sh will install the "Reference_resources" directory, which contains resources for lift over to hg38 and indel normalization.  Dependencies are added via wget. If wget is not installed, please do so before proceeding.
 
 # Description
-- Mini_annotation is an analysis pipeline for varant format call (VCF) file that:
+- Mini_annotation is an analysis pipeline for variant format call (VCF) file that:
         1. Retrieves multi-transcript Ensembl effects for each variant
         2. Retrieves ClinVar clinical interpretation for variant
         3. Retrieves a set of PMIDs referencing variant
