@@ -19,11 +19,11 @@ bash$: bash ./main.sh -v [input_vcf] -o [output_directory] -t (optional)
 - Note:  Use the "-t" (transform) "switch" option to lift over variants if VCF reference genome is hg19, as Ensembl defers to hg38 notation. IMPORTANT:  Variants that fail lift over will be found in [output_directory]/[input_vcf].unlifted.vcf
 
 # Dependencies and requirements
-- Chicago is a bash script designed to be run from the command line.  It requires the user to Java installed, as well as Perl and Python in the appropriate paths.  
-- Note: The first run of main.sh will install will install Reference_resources directory which contains resources for lift overs to hg38 and indel normalization
+- Mini_annotation is a bash pipeline designed to be run from the command line.  It requires the user have Java installed, as well as Perl and Python in the appropriate paths.  
+- Note: The first run of main.sh will install the "Reference_resources" directory, which contains resources for lift over to hg38 and indel normalization
 - Important: Due to limits of Enseml VEP API requests, the maximum number of variants that can be processed is 11,000,000 per hour.  If more variants need to be processed, please truncate inputs accordingly
 
-# Test on file "short.vcf":
+# Test on file "short.vcf" (provded):
 bash$: ./main.sh -v short.vcf -o Short_output -t
 - Results table should write to "Short_output/results.tsv"
 
