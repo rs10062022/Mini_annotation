@@ -24,7 +24,7 @@ while(<IN>) {
 		if ($vcfRow[4] =~ m/\,/) {
 			@altAlleles=split(/\,/,$vcfRow[4]);
 			@info=split(/\;/,$vcfRow[7]);
-			# ... split additional alleles and along with correspondinf total read (TR) values up into different VCF rows
+			# ... split additional alleles and along with corresponding total read (TR) values up into different VCF rows
 			for($i=0; $i<(scalar(@altAlleles)); $i++) {
 				for ($j=0;$j<(scalar(@info));$j++) {
 					if(substr($info[$j],0,3) eq "TR=") {
