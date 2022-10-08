@@ -60,7 +60,7 @@ if len(sys.argv) > 1:
 							if "gene_symbol" in j:
 								fx = fx + j['gene_symbol'] + "(" + j['transcript_id'] + "):" + ';'.join(j['consequence_terms']) + "|"
 							else:
-								fx = fx + "gene_not_found"
+								fx = fx + "gene_not_found|"
 					# Retrieve any gnomAD freqs, ClinVar interpretations and PMIDs
 					if "colocated_variants" in i:
 						for k in i['colocated_variants']:
