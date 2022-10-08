@@ -9,7 +9,7 @@
 
 import json, requests, sys
 
-# Extracts specified VCF row metadata from an VCF "INFO" list object
+# Extracts specified VCF row metadata from a VCF "INFO" list object
 def parse_metadata(inlist,query):	
 	searchTerm = query + "="
 	m = [x for x in inlist if x.startswith(searchTerm)]
