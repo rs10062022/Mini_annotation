@@ -14,7 +14,7 @@ do
 done
 if [ -z $input ] || [ -z $outdir ];
 then
-	echo "Must specify vcf and name of output directory"
+	echo "### Must specify vcf and name of output directory"
 	exit 1
 else
 	rm -r $outdir
@@ -23,7 +23,7 @@ fi
 
 if [ -d "Reference_resources" ] 
 then
-	echo "Reference_resources detected..." 
+	echo "### Reference_resources detected..." 
 else
 	echo "### Installing Reference_resources..."
 	bash get_dependencies.sh
