@@ -1,9 +1,6 @@
 # Title
 - Mini_annotation
 
-# Download URL
-https://github.com/rs10062022/Mini_annotation
-
 # Author
 - Ryan L. Subaran, PhD (Columbia Univ., NY  2008)
 
@@ -11,7 +8,7 @@ https://github.com/rs10062022/Mini_annotation
 - circa 10.06.2022
 
 # Test on file "short.vcf" (provded):
-bash$: ./main.sh -v short.vcf -o Short_output -t
+bash$: bash ./main.sh -v short.vcf -o Short_output -t
 - Results table should write to "Short_output/results.tsv"
 - Note: The first run of main.sh will install the "Reference_resources" directory, which contains resources for lift over to hg38 and indel normalization.  Dependencies are added via wget. If wget is not installed, please do so before proceeding.
 
