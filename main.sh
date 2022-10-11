@@ -68,7 +68,7 @@ Reference_resources/bcftools-1.16/bcftools norm --multiallelics - $outdir/$input
     --fasta-ref Reference_resources/hg38.fa \
     -O v -o $outdir/$input.proc.hg38.norm.vcf
 
-echo "### Spliting VCF input files..."
+echo "### Splitting VCF input files..."
 rm -r $outdir/Tmp
 mkdir $outdir/Tmp
 grep -v '^#' $outdir/$input.proc.hg38.norm.vcf > $outdir/noheader.txt
