@@ -3,7 +3,7 @@
 ########################################################################################################################################
 ### Author: Ryan L. Subaran
 ### Date: 10.06.2022
-### Purpose: Call VEP REST API and pull read ratios and population frequency from VCF
+### Purpose: Call VEP REST API and pull read ratios from VCF
 ### Syntax: python3 callvepi.py [input_vcf]
 ########################################################################################################################################
 
