@@ -13,8 +13,8 @@ import json, requests, sys
 def parse_metadata(inlist,query):	
 	searchTerm = query + "="
 	m = [x for x in inlist if x.startswith(searchTerm)]
-	r = m[0].split("=")[1]
-	return r
+	rtrn = m[0].split("=")[1]
+	return rtrn
 
 vepOutput=[]
 if len(sys.argv) > 1:
